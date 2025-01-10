@@ -49,8 +49,14 @@ Create a `.env` file in the root directory:
 PORT=3000
 
 # Required environment variables
+API_BASE=https://cluster-api.do-ai.run/v1
+AGENT_ID=your-agent-id
+AGENT_KEY=your-agent-key
 AGENT_ENDPOINT=your-agent-endpoint
 SESSION_SECRET=your-session-secret
+
+# Optional environment variables
+NODE_ENV=development # or production
 ```
 
 **Note**: When deploying to DigitalOcean App Platform, do not set the `PORT` environment variable as it is automatically managed by the platform.
